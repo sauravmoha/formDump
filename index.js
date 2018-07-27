@@ -3,6 +3,7 @@ const Joi = require("joi");
 
 const formDump = {
   name: "formDump",
+  multiple: true,
   register: async function(server, options) {
     try {
       server.route(require("./routes")(options));
